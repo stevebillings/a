@@ -13,7 +13,7 @@ The bazel directory contains the code for a Synopsys Detect [detector](https://c
 
 ## C++ / Robotics
 
-For the last year+ I have been developing robotic software in my spare time using C++. It took a while to develop my C++ skills to the point where I produced reasonably good code, but this code is getting to the point where I'm starting to feel pretty good about it:
+For the last year+ I have been developing robot software in my spare time using C++. It took a while to develop my C++ skills to the point where I produced reasonably good code, but this code is getting to the point where I'm starting to feel pretty good about it:
 
 1. git clone https://github.com/stevebillings/wanderbot.git
 1. cd wanderbot
@@ -22,8 +22,8 @@ The [README](https://github.com/stevebillings/wanderbot#readme) contains a brief
 
 At some point (hopefully soon) I'll post a video here of the robot in action.
 
-A brief history of my explorations into robotics:
+A brief history of my explorations into software for robots:
 
 * Early in my career I did some robotics using what I believe was pretty standard at the time: C or assembly code running on a simple cyclic executive (essentially bare metal).
 * When my interest in robotics revived about a year ago, I assembled from cheap parts a simple wheeled robot with a ping sensor and an arduino-based C++ controller (very reminiscent my early robotics work, and laughably primitive compared to how modern robots are developed).
-* After learning more about how modern robots are developed, I shifted my attention to Robotic Operating System 2 (ROS 2), and started developing wheeled robots (only simulated at this point) on ROS 2. I developed a bunch of early ROS 2 experiments in my ros2overlays repo. From that I extracted some (still primitive) navigating robot code and created the loiterbot repo. As my thinking on the robot I wanted to create changed, and my navigation algorithm became more sophisticated (using Vector Force Field), I eventually moved the code to the more appropriately named wanderbot repo.
+* After learning more about how modern robots are developed, I shifted my attention to Robot Operating System 2 (ROS 2), and started developing wheeled robots (only simulated at this point) on ROS 2. I developed a bunch of early ROS 2 experiments in my ros2overlays repo. From that I extracted some (still primitive) navigating robot code and created the loiterbot repo. As my thinking on the robot I wanted to create changed, and my navigation algorithm became more sophisticated (using Vector Force Field), I eventually moved the code to the more appropriately named wanderbot repo.
