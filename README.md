@@ -4,14 +4,20 @@
 
 My primary langage for professional use for the last 15 years has been Java. To see an example of code for which I was the primary developer:
 
-1. TBD
-2. TBD
+1. git clone https://github.com/blackducksoftware/synopsys-detect.git
+1. cd synopsys-detect
+2. git checkout 8.0.0
+
+Under detectable/src/main/java/com/synopsys/integration/detectable/detectables/bazel/ is the code for a Synopsys Detect [detector](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=components/detectors.html&_LANG=enus) (the [Bazel Detector](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=packagemgrs/bazel.html&_LANG=enus)) for which I was the primary developer.
 
 ## C++ / Robotics
 
-For the last year+ I have been developing robotic software in my spare time using C++. It took a while to develop my C++ skills to the point I could develop reasonably good code. This repository is getting to the point where I feel pretty good about it:
+For the last year+ I have been developing robotic software in my spare time using C++. It took a while to develop my C++ skills to the point I could develop reasonably good code. This code is getting to the point where I'm starting to feel pretty good about it:
 
-1. TBD
+1. git clone https://github.com/stevebillings/wanderbot.git
+1. cd wanderbot
+
+The [README](https://github.com/stevebillings/wanderbot#readme) contains a brief description of the code design.
 
 A brief history of my explorations into robotics:
 
