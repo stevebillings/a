@@ -11,7 +11,7 @@ My primary langage for professional use for the last 15 years has been Java. Mos
 
 The bazel directory contains the code for a Synopsys Detect ["detector"](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=gettingstarted/terms/detectors.html) (in this case: the [Bazel Detector](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=packagemgrs/bazel.html)). While everything we did was a team effort, as of Detect 8.0.0 I had done most of the work on this code.
 
-## C++ / Robotics
+## C++
 
 Since late 2021 I have been developing robot software in my spare time using C++. My primary objective in this has been to learn C++; robotics provides an interesting practice field for it. For a look at some recent code that I feel best represents my current C++ abilities:
 
