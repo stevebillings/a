@@ -9,7 +9,7 @@ My primary langage for professional use for the last 15 years has been Java. Mos
 1. git checkout 8.0.0
 1. cd detectable/src/main/java/com/synopsys/integration/detectable/detectables/bazel/
 
-The bazel directory contains the code for a Synopsys Detect ["detector"](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=components/detectors.html&_LANG=enus) (in this case: the [Bazel Detector](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=packagemgrs/bazel.html&_LANG=enus)). While everything we did was a team effort, as of Detect 8.0.0 I had done most of the work on this code.
+The bazel directory contains the code for a Synopsys Detect ["detector"](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=gettingstarted/terms/detectors.html) (in this case: the [Bazel Detector](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=packagemgrs/bazel.html)). While everything we did was a team effort, as of Detect 8.0.0 I had done most of the work on this code.
 
 ## C++ / Robotics
 
