@@ -13,7 +13,7 @@ The bazel directory contains the code for a Synopsys Detect ["detector"](https:/
 
 ## C++ / Robotics
 
-For the last year+ I have been developing robot software in my spare time using C++. My primary objective in this has been to learn C++; robotics provided an interesting practice field for it. For a look at some recent code that I feel best represents my current C++ abilities:
+Since late 2021 I have been developing robot software in my spare time using C++. My primary objective in this has been to learn C++; robotics provided an interesting practice field for it. For a look at some recent code that I feel best represents my current C++ abilities:
 
 1. git clone https://github.com/stevebillings/wanderbot.git
 1. cd wanderbot
