@@ -18,9 +18,9 @@ Since late 2021 I have been developing robot software in my spare time using C++
 1. git clone https://github.com/stevebillings/wanderbot.git
 1. cd wanderbot
 
-The [README](https://github.com/stevebillings/wanderbot#readme) contains a brief description of the software design.
+The [README](https://github.com/stevebillings/wanderbot#readme) contains a brief description of the software.
 
-At some point I'll post a video here of the robot in action.
+A video of the code running in a simulation is [here](https://drive.google.com/file/d/109PchHxjqMuJjDrc6-UHcsy3-8Mow3KA/view?usp=sharing).
 
 A brief history of my explorations into software for robots:
 
