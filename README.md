@@ -2,7 +2,11 @@
 
 ## Java
 
-My primary langage for professional use for the last 15 years has been Java. Most of the code I worked on while at Synopsys is open source in github. For a look at some code for which I was the primary developer:
+My primary langage for professional use for the last 15 years has been Java. Most of the code I worked on while at Synopsys is open source in github. Here are some examples of that work.
+
+### New code
+
+For a look at some code for which I was the primary developer:
 
 1. git clone https://github.com/blackducksoftware/synopsys-detect.git
 1. cd synopsys-detect
@@ -11,7 +15,14 @@ My primary langage for professional use for the last 15 years has been Java. Mos
 
 The bazel package contains the code for a Synopsys Detect ["detector"](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=gettingstarted/terms/detectors.html) (in this case: the [Bazel Detector](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=packagemgrs/bazel.html)). While everything we did was a team effort, I was responsible for the design and, as of Detect 8.0.0, I had done most of the work on this code.
 
-The bazel detector’s job is to discover dependencies for any of several software project types that use the [bazel](https://bazel.build/) build tool. Depending on the project type, the detector would run a sequence of steps that included running bazel commands, parsing the output, using elements of that output as arguments in subsequent bazel commands, etc. This sequence of steps would eventually result in a set of ids that represented the project’s dependencies, that Detect would feed into the [Black Duck SCA system](https://www.synopsys.com/software-integrity/security-testing/software-composition-analysis.html). The bazel detector design is based on a set of “pipelines” (think unix pipes). It has one pipeline per project type. Each pipeline combines a set of general-purpose steps (execute command, filter, split, de-dup, replace, parse, etc.) together. This approach greatly reduced the amount of code required to support all of the required project types, and greatly reduced the incremental effort required to add support for a new project type.
+The bazel detector’s job is to discover dependencies for any of several software project types that use the [bazel](https://bazel.build/) build tool. Depending on the project type, the detector would run a sequence of steps that included running bazel commands, parsing the output, using elements of that output as arguments in subsequent bazel commands, etc. This sequence of steps eventually results in a graph represented the project’s dependencies, that Detect would feed into the [Black Duck SCA system](https://www.synopsys.com/software-integrity/security-testing/software-composition-analysis.html) via Black Duck's REST APIs. The bazel detector design is based on a set of “pipelines” (think unix pipes; see class Pipelines). It has one pipeline per project type. Each pipeline combines a set of general-purpose steps (see the classes in package bazel.pipeline.step). Examples of steps include: execute command, filter, split, de-dup, replace, parse, etc. together. This approach greatly reduced the amount of code required to support all of the required project types, and greatly reduced the incremental effort required to add support for a new project type.
+
+### Changed code
+
+This [pull request](https://github.com/blackducksoftware/synopsys-detect/pull/516) shows a pretty typical change to a detector (in this case: the bitbake detector). It includes new code (and tests) that I wrote, changes I made to existing code, and team interaction during code review.
+
+The [Bitbake Detector](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=packagemgrs/bitbake.html)
+discovers dependencies in [bitbake](https://docs.yoctoproject.org/1.6/bitbake-user-manual/bitbake-user-manual.html) projects. It does this by executing a bazel command, parsing the output, executing another bitbake command using information gleaned from the previous command output, etc. This sequence of steps eventually results in a graph representing the project’s dependencies, that Detect would feed into the [Black Duck SCA system](https://www.synopsys.com/software-integrity/security-testing/software-composition-analysis.html) via Black Duck's REST APIs.
 
 ## C++ / Robot Software
 
