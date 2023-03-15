@@ -1,5 +1,11 @@
 # Steve Billings: some example code
 
+This page contains links to examples of (open source) code I've written in:
+
+* [Java](#java)
+* [C++](#cpp)
+
+<a name="java"></a>
 ## Java
 
 My primary langage for professional use for the last 15 years has been Java. Most of the code I worked on while at Synopsys is open source in github. Here are some examples of that work.
@@ -24,6 +30,7 @@ This [pull request](https://github.com/blackducksoftware/synopsys-detect/pull/51
 The BitBake Detector discovers dependencies in [BitBake](https://docs.yoctoproject.org/1.6/bitbake-user-manual/bitbake-user-manual.html) projects.
 It does this by executing a BitBake command, parsing the output, executing another BitBake command using information parsed from the output of the previous command, etc. This sequence of steps eventually results in a graph representing the project’s dependencies, that Detect would feed into the [Black Duck SCA system](https://www.synopsys.com/software-integrity/security-testing/software-composition-analysis.html) via Black Duck's REST APIs. Unlike the Bazel detector, the BitBake detector only supports a single project type, so has no need for a pipeline approach.
 
+<a name="cpp"></a>
 ## C++ / Robot Software
 
 Since late 2021 I have been developing robot software in my spare time, primarily in C++. My primary objective in this has been to learn first C++, and then Python; I think robots are a lot of fun so robotics provides an interesting practice field for learning languages. For a look at some of my recent C++ code:
