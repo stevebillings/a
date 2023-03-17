@@ -49,6 +49,8 @@ Videos of the code running in simulation:
 1. A video that emphasizes the navigation algorithm (Virtual Force Field) being used to navigate a simple environment is [here](https://drive.google.com/file/d/109PchHxjqMuJjDrc6-UHcsy3-8Mow3KA/view?usp=sharing).
 2. A video that shows the robot (FSM) changing state to recover from being stuck in a corner is [here](https://drive.google.com/file/d/1a-lXPeDvVW8w1gOMR2BIlpd47dWaV_UQ/view?usp=sharing).
 
+### History
+
 A brief history of my explorations into software for robots:
 
 * Early in my career I did some robotics work following an approach that I believe was typical at the time: C or assembly code running on a simple cyclic executive (essentially bare metal).
