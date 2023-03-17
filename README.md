@@ -19,13 +19,17 @@ For a look at some code for which I was the primary developer:
 1. git checkout 8.0.0
 1. cd detectable/src/main/java/com/synopsys/integration/detectable/detectables/bazel/
 
-The bazel package contains the code for a Synopsys Detect ["detector"](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=gettingstarted/terms/detectors.html) (in this case: the [Bazel Detector](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=packagemgrs/bazel.html)). While everything we did was a team effort, I was responsible for the design and, as of Detect 8.0.0, I had done most of the work on this code.
+The bazel package contains the code for a Synopsys Detect ["detector"](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=gettingstarted/terms/detectors.html) (in this case: the [Bazel Detector](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=packagemgrs/bazel.html)). While everything we did was a team effort, I was responsible for the design, developed the initial version of it, and, as of Detect 8.0.0, had done most of the work on this code.
+
+#### Background
 
 The Bazel detector’s job is to discover dependencies for any of several software project types that use the [Bazel](https://bazel.build/) build tool. Depending on the project type, the detector would run a sequence of steps that included running Bazel commands, parsing the output, using elements of that output as arguments in subsequent Bazel commands, etc. This sequence of steps eventually results in a graph representing the project’s dependencies, that Detect would feed into the [Black Duck SCA system](https://www.synopsys.com/software-integrity/security-testing/software-composition-analysis.html) via Black Duck's REST APIs. The Bazel detector design is based on a set of “pipelines” (think unix pipes; see class Pipelines). It has one pipeline per project type. Each pipeline combines a set of general-purpose steps (see the classes in package bazel.pipeline.step) in a sequence. Examples of steps include: execute command, filter, split, de-dup, replace, parse, etc. This approach greatly reduced the amount of code required to support all of the required project types, and greatly reduced the incremental effort required to add support for a new project type.
 
-### Changed code
+### Enhanced code
 
 This [pull request](https://github.com/blackducksoftware/synopsys-detect/pull/516) shows a pretty typical change to a detector (in this case: the [BitBake Detector](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=packagemgrs/bitbake.html)). It includes new code (and tests) that I wrote, changes I made to existing code, and team interaction during code review.
+
+#### Background
 
 The BitBake Detector discovers dependencies in [BitBake](https://docs.yoctoproject.org/1.6/bitbake-user-manual/bitbake-user-manual.html) projects.
 It does this by executing a BitBake command, parsing the output, executing another BitBake command using information parsed from the output of the previous command, etc. This sequence of steps eventually results in a graph representing the project’s dependencies, that Detect would feed into the [Black Duck SCA system](https://www.synopsys.com/software-integrity/security-testing/software-composition-analysis.html) via Black Duck's REST APIs. Unlike the Bazel detector, the BitBake detector only supports a single project type, so has no need for a pipeline approach.
@@ -33,7 +37,7 @@ It does this by executing a BitBake command, parsing the output, executing anoth
 <a name="cpp"></a>
 ## C++ / Robot Software
 
-Since late 2021 I have been developing robot software in my spare time, primarily in C++. My primary objective in this has been to learn first C++, and then Python; I think robots are a lot of fun so robotics provides an interesting practice field for learning languages. For a look at some of my recent C++ code:
+Since late 2021 I have been developing robot software in my spare time, primarily in C++. One of my objectives in this has been to learn first C++, and then Python. I think robots are a lot of fun so robotics provides an interesting sandbox for learning languages. For a look at some of my recent (still under deveopment at this point) C++ code:
 
 1. git clone https://github.com/stevebillings/wanderbot.git
 1. cd wanderbot
