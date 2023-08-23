@@ -54,7 +54,7 @@ It does this by executing a BitBake command, parsing the output, executing anoth
 <a name="cpp"></a>
 ## C++ / Robot Software
 
-Since late 2021 I have been developing robot software in my spare time, primarily in C++. One of my objectives in this has been to learn first C++, and then Python. I think robots are a lot of fun so robotics provides an interesting sandbox for learning languages. For a look at some of my recent (still under deveopment at this point) C++ code:
+Since late 2021 I have been developing robot software in my spare time, primarily in C++. One of my objectives in this has been to learn C++. I think robots are a lot of fun so robotics provides an interesting sandbox for learning a new language. For a look at some of my recent C++ code:
 
 1. git clone https://github.com/stevebillings/wanderbot.git
 1. cd wanderbot
