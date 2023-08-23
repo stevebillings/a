@@ -2,9 +2,9 @@
 
 This page contains links to examples of (open source) code I've written in:
 
-* [TypeScript on Node.js](#node)
+* [TypeScript on Node.js (a web application)](#node)
 * [Java](#java)
-* [C++](#cpp)
+* [C++ (robotics)](#cpp)
 
 <a name="node"></a>
 ## TypeScript on Node.js
