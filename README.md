@@ -2,12 +2,12 @@
 
 This page contains links to examples of (open source) code I've written in:
 
-* [Node.js/TypeScript](#node)
+* [TypeScript on Node.js](#node)
 * [Java](#java)
 * [C++](#cpp)
 
 <a name="node"></a>
-## Node.js / TypeScript
+## TypeScript on Node.js
 
 I am currently building a web application that enables users to track progress relative to their goals for virtual any fitness-related activity (running, cycling, lifting, etc.). It's written in TypeScript, JavaScript, HTML, CSS, and EJS on Node.js, Express.js, Passport.js (OAuth 2.0 authentication), and MySQL. It runs in containers hosted on AWS.
 
@@ -15,6 +15,8 @@ The project serves two purposes:
 
 1. It's a way to exercise/enhance my skills in that tech stack.
 2. It's an application I have a use for.
+
+I've been focusing primarily on the back end functionality, and as a result, at this point it's about the ugliest web application on the internet. But I'm adding functionality week by week, and expect it to be useful (at least to me) soon. Please feel free to sign in and give it a try. (I plan to add a mechanism for providing feedback fairly soon.)
 
 URL: https://trackyourweek.com
 
