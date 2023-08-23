@@ -2,13 +2,27 @@
 
 This page contains links to examples of (open source) code I've written in:
 
+* [Node.js/TypeScript](#node)
 * [Java](#java)
 * [C++](#cpp)
+
+<a name="node"></a>
+## Node.js / TypeScript
+
+I am currently building a web application that enables users to track progress relative to their goals for virtual any fitness-related activity (running, cycling, lifting, etc.). It's written in TypeScript, JavaScript, HTML, CSS, and EJS on Node.js, Express.js, Passport.js (OAuth 2.0 authentication), and MySQL. It runs in containers hosted on AWS.
+
+The project serves two purposes:
+
+1. It's a way to exercise/enhance my skills in that tech stack.
+2. It's an application I have a use for.
+
+URL: https://trackyourweek.com
+Source repo: https://github.com/stevebillings/workouttracker.git 
 
 <a name="java"></a>
 ## Java
 
-My primary langage for professional use for the last 15 years has been Java. Most of the code I worked on while at Synopsys is open source in github. Here are some examples of that work.
+My primary langage for professional use for most of the last 15 years has been Java. Most of the code I worked on while at Synopsys is open source in github. Here are some examples of that work.
 
 ### New code
 
