@@ -11,6 +11,10 @@ This page contains links to examples of (open source) code I've written in:
 
 I am currently building a web application that enables users to track progress relative to their goals for virtual any fitness-related activity (running, cycling, lifting, etc.). It's written in TypeScript, JavaScript, HTML, CSS, and EJS on Node.js, Express.js, Passport.js (OAuth 2.0 authentication), and MySQL. It runs in containers hosted on AWS.
 
+I'm currently in the process of migrating the database access code to a
+separate containerized data service behind a RESTful API, written in Java on Spring Boot.
+I'll make that git repo public soon.
+
 The project serves two purposes:
 
 1. It's a way to exercise/enhance my skills in that tech stack.
