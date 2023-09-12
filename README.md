@@ -3,33 +3,43 @@
 This page contains links to examples of (open source) code I've written in:
 
 * [TypeScript on Node.js (a web application)](#node)
-* [Java](#java)
+* [Java and Spring Boot](#java)
 * [C++ (robotics)](#cpp)
 
 <a name="node"></a>
 ## TypeScript on Node.js
 
-I am currently building a web application that enables users to track progress relative to their goals for virtual any fitness-related activity (running, cycling, lifting, etc.). It's written in TypeScript, JavaScript, HTML, CSS, and EJS on Node.js, Express.js, Passport.js (OAuth 2.0 authentication), and MySQL. It runs in containers hosted on AWS.
+I am currently working on a [web application](https://trackyourweek.com) that enables users to track progress relative to their goals for virtual any fitness-related activity (running, cycling, lifting, etc.). 
 
-I'm currently in the process of migrating the database access code to a
-separate containerized data service behind a RESTful API, written in Java on Spring Boot.
-I'll make that git repo public soon.
+The [main web application](https://github.com/stevebillings/workouttracker.git) is written in TypeScript, HTML, CSS, and EJS on Node.js, Express.js, Passport.js (OAuth 2.0 authentication), and MySQL. 
 
-The project serves two purposes:
+I am currently migrating the database access code (originally part of the main web application) to a
+separate [data service](https://github.com/stevebillings/activitytrackerdataservice) with a RESTful API,
+written in Java on Spring Boot, Spring Data REST, and Spring Data JPA (Hibernate). 
 
-1. It's a way to exercise/enhance my skills in that tech stack.
-2. It's an application I have a use for.
+The Node.js web application, the Spring Boot data service, and the MySQL database run in containers hosted on AWS.
 
-I've been focusing primarily on the back end functionality, and as a result, at this point it's about the ugliest web application on the internet. But I'm adding functionality week by week, and expect it to be useful (at least to me) soon. Please feel free to sign in and give it a try. (I plan to add a mechanism for providing feedback fairly soon.)
+So far I have been, and continue to be, focused on back end functionality, and as a result it's about the ugliest web application on the internet. 
+But it has reached the point where it is useful, at least to me. 
+Feel free to sign in and give it a try if you're interested.
 
 URL: https://trackyourweek.com
 
-Source repo: https://github.com/stevebillings/workouttracker.git 
+Source repos:
+* Web application: https://github.com/stevebillings/workouttracker.git
+* Data service: https://github.com/stevebillings/activitytrackerdataservice
 
 <a name="java"></a>
-## Java
+## Java and Spring Boot
 
-My primary langage for professional use for most of the last 15 years has been Java. Most of the code I worked on while at Synopsys is open source in github. Here are some examples of that work.
+My primary langage for professional use for most of the last 15 years has been Java, and most of that work has used Spring Boot. 
+
+I am currently developing the [data service](https://github.com/stevebillings/activitytrackerdataservice) for
+[trackyourweek.com](https://trackyourweek.com) (described above),
+in Java on Spring Boot, Spring Data REST, and Spring Data JPA (Hibernate),
+but it is currently at the very early stages and there isn't much code there yet.
+
+Most of the code I worked on while at Synopsys is open source in github. Here are some examples of that work.
 
 ### New code
 
