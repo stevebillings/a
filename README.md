@@ -2,21 +2,21 @@
 
 This page contains links to examples of (open source) code I've written in:
 
-* [TypeScript on Node.js (a web application)](#node)
-* [Java and Spring Boot](#java)
+* [Current project (TypeScript on Node.js, and Java on Spring Boot)](#node)
+* [Other Java and Spring Boot](#java)
 * [C++ (robotics)](#cpp)
 
 <a name="node"></a>
-## TypeScript on Node.js
+## Current project (TypeScript on Node.js, and Java on Spring Boot)
 
 I am currently working on a web application ([trackyourweek.com](https://trackyourweek.com)) that enables users to track progress relative to their goals for virtual any fitness-related activity (running, cycling, lifting, etc.). 
 
-### Web application
+### Web application (Typescript on Node.js)
 
 The [main web application](https://github.com/stevebillings/workouttracker.git) is written in TypeScript, HTML, CSS, and EJS on Node.js, Express.js, Passport.js (OAuth 2.0 authentication), and MySQL. 
 
 <a name="dataservice"></a>
-### Data service
+### Data service (Java on Spring Boot)
 
 The [data service](https://github.com/stevebillings/activitytrackerdataservice) is written in Java on Spring Boot, Spring Data REST, and Spring Data JPA (Hibernate), and is accessed by the main web application
 via a RESTful API.
@@ -28,7 +28,6 @@ in the main web application that accesses the database directly; this code will 
 
 The Node.js web application and the Spring Boot data service run in separate containers hosted on AWS.
 (The MySQL database is also hosted on AWS.)
-
 
 ### Development status
 
@@ -43,7 +42,7 @@ Source repos:
 * Data service: [https://github.com/stevebillings/activitytrackerdataservice](https://github.com/stevebillings/activitytrackerdataservice)
 
 <a name="java"></a>
-## Java and Spring Boot
+## Other Java on Spring Boot
 
 My primary langage for professional use for most of the last 15 years has been Java, and most of that work has used Spring Boot. 
 
@@ -52,7 +51,7 @@ I am currently developing the [data service](https://github.com/stevebillings/ac
 in Java on Spring Boot, Spring Data REST, and Spring Data JPA (Hibernate). Please refer to the more
 complete description [above](#dataservice).
 
-Most of the code I worked on while at Synopsys is open source in github. Here are some examples of that work.
+Most of the code I worked on while at Synopsys was written in Java on Spring Boot, and much of it is open source in github. Here are some examples of that work.
 
 ### New code
 
