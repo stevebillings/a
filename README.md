@@ -44,7 +44,7 @@ Source repos:
 <a name="java"></a>
 ## Other Java on Spring Boot
 
-My primary langage for professional use for most of the last 15 years has been Java, and most of that work has used Spring Boot. 
+My primary language for professional use for most of the last 15 years has been Java, and most of that work has used Spring Boot. 
 
 I am currently developing the [data service](https://github.com/stevebillings/activitytrackerdataservice) for
 [trackyourweek.com](https://trackyourweek.com) (described above),
