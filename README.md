@@ -22,7 +22,7 @@ The [data service](https://github.com/stevebillings/activitytrackerdataservice) 
 via a RESTful API.
 
 I am currently in the process of migrating database access from its original home in the main web application to the data services. As a result, there is still some code
-in the main web application that accesses the database directly; this code will be replaced (with calls to the data service REST API) over time as the data service functionality grows.
+in the main web application that accesses the database directly. I plan to move all database access to the data service over time.
 
 ### Cloud platform
 
