@@ -2,12 +2,12 @@
 
 This page contains links to examples of (open source) code I've written in:
 
-* [Current project (TypeScript on Node.js, and Java on Spring Boot)](#node)
-* [Other Java and Spring Boot](#java)
+* [Current project (TypeScript on Node.js, and Python on Django)](#node)
+* [Java and Spring Boot](#java)
 * [C++ (robotics)](#cpp)
 
 <a name="node"></a>
-## Current project (TypeScript on Node.js, and Java on Spring Boot)
+## Current project (TypeScript on Node.js, and Python on Django)
 
 I am currently working on a web application ([trackyourweek.com](https://trackyourweek.com)) that enables users to track progress relative to their goals for virtual any fitness-related activity (running, cycling, lifting, etc.). 
 
@@ -16,17 +16,17 @@ I am currently working on a web application ([trackyourweek.com](https://trackyo
 The [main web application](https://github.com/stevebillings/workouttracker.git) is written in TypeScript, HTML, CSS, and EJS on Node.js, Express.js, Passport.js (OAuth 2.0 authentication), and MySQL. 
 
 <a name="dataservice"></a>
-### Data service (Java on Spring Boot)
+### Data service (Python on DJango and Django REST framework)
 
-The [data service](https://github.com/stevebillings/activitytrackerdataservice) is written in Java on Spring Boot, Spring Data REST, and Spring Data JPA (Hibernate), and is accessed by the main web application
+The [data service](https://github.com/stevebillings/activitytrackerdataapi) is written in Python on Django and Django REST framework, and is accessed by the main web application
 via a RESTful API.
 
-I am currently in the process of migrating database access from its original home in the main web application to the data services. As a result, there is still some code
-in the main web application that accesses the database directly. I plan to move all database access to the data service over time.
+I am currently developing the data service. Once it is ready, I will migrate database access from its original home in the main web application to the data services.
 
 ### Cloud platform
 
-The Node.js web application and the Spring Boot data service run in separate containers hosted on AWS.
+The Node.js web application and the Django data service run in separate containers that are deployed to AWS.
+Deployment is automated using the AWS CLI.
 (The MySQL database is also hosted on AWS.)
 
 ### Development status
@@ -42,14 +42,9 @@ Source repos:
 * Data service: [https://github.com/stevebillings/activitytrackerdataservice](https://github.com/stevebillings/activitytrackerdataservice)
 
 <a name="java"></a>
-## Other Java on Spring Boot
+## Java on  Boot
 
 My primary language for professional use for most of the last 15 years has been Java, and most of that work has used Spring Boot. 
-
-I am currently developing the [data service](https://github.com/stevebillings/activitytrackerdataservice) for
-[trackyourweek.com](https://trackyourweek.com) (described above),
-in Java on Spring Boot, Spring Data REST, and Spring Data JPA (Hibernate). Please refer to the more
-complete description [above](#dataservice).
 
 Most of the code I worked on while at Synopsys was written in Java on Spring Boot, and much of it is open source in github. Here are some examples of that work.
 
