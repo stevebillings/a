@@ -3,7 +3,7 @@
 This page contains links to examples of (open source) code I've written in:
 
 * [Current project (TypeScript on Node.js, and Python on Django)](#node)
-* [Java and Spring Boot](#java)
+* [Java on Spring Boot](#java)
 * [C++ (robotics)](#cpp)
 
 <a name="node"></a>
@@ -42,7 +42,7 @@ Source repos:
 * Data service: [https://github.com/stevebillings/activitytrackerdataservice](https://github.com/stevebillings/activitytrackerdataservice)
 
 <a name="java"></a>
-## Java on  Boot
+## Java on Spring Boot
 
 My primary language for professional use for most of the last 15 years has been Java, and most of that work has used Spring Boot. 
 
