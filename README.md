@@ -13,15 +13,16 @@ I am currently working on a web application ([trackyourweek.com](https://trackyo
 
 ### Web application (Typescript on Node.js)
 
-The [main web application](https://github.com/stevebillings/workouttracker.git) is written in TypeScript, HTML, CSS, and EJS on Node.js, Express.js, Passport.js (OAuth 2.0 authentication), and MySQL. 
+The [main web application](https://github.com/stevebillings/workouttracker.git) is written in TypeScript, HTML, CSS, and EJS on Node.js, Express.js, and Passport.js (for OAuth 2.0 authentication). 
 
 <a name="dataservice"></a>
 ### Data service (Python on DJango and Django REST framework)
 
 The [data service](https://github.com/stevebillings/activitytrackerdataapi) is written in Python on Django and Django REST framework, and is accessed by the main web application
-via a RESTful API.
+via a RESTful API. The database is MySQL.
 
-I am currently developing the data service. Once it is ready, I will migrate database access from its original home in the main web application to the data services.
+I am currently building out the capabilities of the data service, and migrating the main web application to it (and away from the original direct database access)
+as the capabilities of the data service allow.
 
 ### Cloud platform
 
