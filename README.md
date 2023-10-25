@@ -21,7 +21,7 @@ The [main web application](https://github.com/stevebillings/workouttracker.git) 
 The [data service](https://github.com/stevebillings/activitytrackerdataapi) is written in Python on Django and Django REST framework, and is accessed by the main web application
 via a RESTful API. The database is MySQL.
 
-I am currently building out the capabilities of the data service, and migrating the main web application to it (and away from the original direct database access)
+I am currently building out the capabilities of the data service, and migrating the main web application to it (and away from its original direct database access)
 as the capabilities of the data service allow.
 
 ### Cloud platform
