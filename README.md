@@ -13,7 +13,8 @@ I am currently working on a web application ([trackyourweek.com](https://trackyo
 
 ### Web application (Typescript on Node.js)
 
-The [main web application](https://github.com/stevebillings/workouttracker.git) is written in TypeScript, HTML, CSS, and EJS on Node.js, Express.js, and Passport.js (for OAuth 2.0 authentication). 
+The main web application is written in TypeScript, HTML, CSS, and EJS on Node.js, Express.js, and Passport.js (for OAuth 2.0 authentication). (I've temporarily made the github repo for the main web app private while I
+port it to the (relatively new) data service described below; I'll make it public again once that work is complete.)
 
 <a name="dataservice"></a>
 ### Data service (Python on DJango and Django REST framework)
