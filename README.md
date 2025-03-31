@@ -12,12 +12,14 @@ This page describes a few relatively recent and representative projects I have w
 
 For fun (and to learn about developing AI applications) I am currently developing a AI chatbot creation platform, written in Python, that enables a user to quickly configure new Retrieval-Augmented Generation (RAG) LLM chatbots, without writing code.
 
-Source code and a more thorough description can be found at: ["https://github.com/stevebillings/simple-rag-apps"](https://github.com/stevebillings/simple-rag-apps)
+Source code and a more thorough description can be found at: [https://github.com/stevebillings/simple-rag-apps](https://github.com/stevebillings/simple-rag-apps)
 
 <a name="haystack"></a>
 ## Full stack (Typescript on React and Python on Django) web application
 
-For work, I am currently the sole architect / designer / developer of Haystack’s customer portal / data management platform for complex user and lab workflows. It is a web application comprised of a Python/Django backend accessed via a level 3 (HATEOAS) REST API, and Typescript/React/Next.js frontend. 
+For work, I am currently the sole architect / designer / developer of [Haystack Ag](https://www.haystackag.com/)’s customer portal / data management platform for complex user and lab workflows. It is a web application comprised of a Python/Django backend accessed via a level 3 (HATEOAS) REST API, and Typescript/React/Next.js frontend. 
+
+([Haystack Ag](https://www.haystackag.com/) is an early stage greentech startup focused on providing cost-effective and high-accuracy soil carbon measurement.)
 
 Both the frontend and the backend deploy automatically to containers on AWS using Github Actions (building toward a CI/CD approach).
 
@@ -43,7 +45,7 @@ For a look at some code for which I was the primary developer:
 1. git checkout 8.0.0
 1. cd detectable/src/main/java/com/synopsys/integration/detectable/detectables/bazel/
 
-The bazel package contains the Synopsys Detect code that provided support for Bazel projects (see ["Bazel support"](https://documentation.blackduck.com/bundle/detect/page/packagemgrs/bazel.html). While everything we did was a team effort, I was responsible for the design, developed the initial version of it, and, as of Detect 8.0.0, had done the majority of the work on this code.
+The bazel package contains the Synopsys Detect code that provided support for Bazel projects (see [Bazel support](https://documentation.blackduck.com/bundle/detect/page/packagemgrs/bazel.html). While everything we did was a team effort, I was responsible for the design, developed the initial version of it, and, as of Detect 8.0.0, had done the majority of the work on this code.
 
 #### Background
 
