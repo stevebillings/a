@@ -32,9 +32,9 @@ A publish-subscribe messaging component enables asynchronous responses to events
 <a name="java"></a>
 ## Java on Spring Boot
 
-My primary language for professional use for about 15 years was Java, and most of that work has used Spring Boot. 
+My primary language for professional use for about 15 years was Java, and most of that work also used Spring Boot. 
 
-Most of the code I worked on while at Synopsys was written in Java on Spring Boot, and much of it is open source in github. Here are some examples of that work.
+Most of the code I worked on while at Synopsys (now Black Duck Software) was written in Java on Spring Boot, and much of it is open source in github. Here are some examples of that work.
 
 ### New code
 
@@ -45,7 +45,7 @@ For a look at some code for which I was the primary developer:
 1. git checkout 8.0.0
 1. cd detectable/src/main/java/com/synopsys/integration/detectable/detectables/bazel/
 
-The bazel package contains the Synopsys Detect code that provided support for Bazel projects (see [Bazel support](https://documentation.blackduck.com/bundle/detect/page/packagemgrs/bazel.html). While everything we did was a team effort, I was responsible for the design, developed the initial version of it, and, as of Detect 8.0.0, had done the majority of the work on this code.
+The bazel package contains the Black Duck Detect code that provided support for Bazel projects (see [Bazel support](https://documentation.blackduck.com/bundle/detect/page/packagemgrs/bazel.html). While everything we did was a team effort, I was responsible for the design, developed the initial version of it, and, as of Detect 8.0.0, had done the majority of the work on this code.
 
 #### Background
 
