@@ -1,52 +1,36 @@
-# Steve Billings: some example code
+# Steve Billings: some example projects
 
-This page contains links to examples of (open source) code I've written in:
+This page describes a few relatively recent and representative projects I have worked on, including (where possible) links to source code:
 
-* [Current project (TypeScript on Node.js, and Python on Django)](#node)
+* [Python AI application](#rag)
+* [Full stack web application (Typescript on React and Python on Django)](#haystack)
 * [Java on Spring Boot](#java)
 * [C++ (robotics)](#cpp)
 
-<a name="node"></a>
-## Current project (TypeScript on Node.js, and Python on Django)
+<a name="rag"></a>
+## Python AI application
 
-I am currently working on a web application ([trackyourweek.com](https://trackyourweek.com)) that enables users to track progress relative to their goals for virtual any fitness-related activity (running, cycling, lifting, etc.). 
+For fun (and to learn about developing AI applications) I am currently developing a AI chatbot creation platform, written in Python, that enables a user to quickly configure new Retrieval-Augmented Generation (RAG) LLM chatbots, without writing code.
 
-### Web application (Typescript on Node.js)
+Source code and a more thorough description can be found at: ["https://github.com/stevebillings/simple-rag-apps"](https://github.com/stevebillings/simple-rag-apps)
 
-The main web application is written in TypeScript, HTML, CSS, and EJS on Node.js, Express.js, and Passport.js (for OAuth 2.0 authentication). (I've temporarily made the github repo for the main web app private while I
-port it to the (relatively new) data service described below; I'll make it public again once that work is complete.)
+<a name="haystack"></a>
+## Full stack (Typescript on React and Python on Django) web application
 
-<a name="dataservice"></a>
-### Data service (Python on DJango and Django REST framework)
+For work, I am currently the sole architect / designer / developer of Haystack’s customer portal / data management platform for complex user and lab workflows. It is a web application comprised of a Python/Django backend accessed via a level 3 (HATEOAS) REST API, and Typescript/React/Next.js frontend. 
 
-The [data service](https://github.com/stevebillings/activitytrackerdataapi) is written in Python on Django and Django REST framework, and is accessed by the main web application
-via a RESTful API. The database is MySQL.
+Both the frontend and the backend deploy automatically to containers on AWS using Github Actions (building toward a CI/CD approach).
 
-I am currently building out the capabilities of the data service, and migrating the main web application to it (and away from its original direct database access)
-as the capabilities of the data service allow.
+It is architected following Domain Driven Design. It utilizes Hexagonal (ports and adapters) architecture with Repository and Unit of Work patterns to keep the business logic (the majority of the code) free from dependencies on the Django framework.
 
-### Cloud platform
+The REST API endpoints and request handlers are (and the API documentation will soon be) generated automatically from a single API specification (a JSON document).
 
-The Node.js web application and the Django data service run in separate containers that are deployed to AWS.
-Deployment is automated using the AWS CLI.
-(The MySQL database is also hosted on AWS.)
-
-### Development status
-
-So far I have been, and continue to be, focused on back end functionality. As a result, [trackyourweek.com](https://trackyourweek.com) about the ugliest web application on the internet. 
-But the functionality has reached the point where it is useful, at least to me. 
-Feel free to sign in and give it a try if you're interested.
-
-URL: [https://trackyourweek.com](https://trackyourweek.com)
-
-Source repos:
-* Web application: [https://github.com/stevebillings/workouttracker.git](https://github.com/stevebillings/workouttracker.git)
-* Data service: [https://github.com/stevebillings/activitytrackerdataservice](https://github.com/stevebillings/activitytrackerdataservice)
+A publish-subscribe messaging component enables asynchronous responses to events (such as persisting important events to a log in the database).
 
 <a name="java"></a>
 ## Java on Spring Boot
 
-My primary language for professional use for most of the last 15 years has been Java, and most of that work has used Spring Boot. 
+My primary language for professional use for about 15 years was Java, and most of that work has used Spring Boot. 
 
 Most of the code I worked on while at Synopsys was written in Java on Spring Boot, and much of it is open source in github. Here are some examples of that work.
 
@@ -59,7 +43,7 @@ For a look at some code for which I was the primary developer:
 1. git checkout 8.0.0
 1. cd detectable/src/main/java/com/synopsys/integration/detectable/detectables/bazel/
 
-The bazel package contains the code for a Synopsys Detect ["detector"](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=gettingstarted/terms/detectors.html) (in this case: the [Bazel Detector](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=packagemgrs/bazel.html)). While everything we did was a team effort, I was responsible for the design, developed the initial version of it, and, as of Detect 8.0.0, had done most of the work on this code.
+The bazel package contains the Synopsys Detect code that provided support for Bazel projects (see ["Bazel support"](https://documentation.blackduck.com/bundle/detect/page/packagemgrs/bazel.html). While everything we did was a team effort, I was responsible for the design, developed the initial version of it, and, as of Detect 8.0.0, had done the majority of the work on this code.
 
 #### Background
 
@@ -67,17 +51,17 @@ The Bazel detector’s job is to discover dependencies for any of several softwa
 
 ### Enhanced code
 
-This [pull request](https://github.com/blackducksoftware/synopsys-detect/pull/516) shows a pretty typical change to a detector (in this case: the [BitBake Detector](https://community.synopsys.com/s/document-item?bundleId=integrations-detect&topicId=packagemgrs/bitbake.html)). It includes new code (and tests) that I wrote, changes I made to existing code, and team interaction during code review.
+This [pull request](https://github.com/blackducksoftware/synopsys-detect/pull/516) shows a pretty typical change to a detector (in this case: the [BitBake Detector](https://documentation.blackduck.com/bundle/detect/page/packagemgrs/bitbake.html)). It includes new code (and tests) that I wrote, changes I made to existing code, and team interaction during code review.
 
 #### Background
 
 The BitBake Detector discovers dependencies in [BitBake](https://docs.yoctoproject.org/1.6/bitbake-user-manual/bitbake-user-manual.html) projects.
-It does this by executing a BitBake command, parsing the output, executing another BitBake command using information parsed from the output of the previous command, etc. This sequence of steps eventually results in a graph representing the project’s dependencies, that Detect would feed into the [Black Duck SCA system](https://www.synopsys.com/software-integrity/security-testing/software-composition-analysis.html) via Black Duck's REST APIs. Unlike the Bazel detector, the BitBake detector only supports a single project type, so has no need for a pipeline approach.
+It does this by executing a BitBake command, parsing the output, executing another BitBake command using information parsed from the output of the previous command, etc. This sequence of steps eventually results in a graph representing the project’s dependencies, that Detect would feed into the [Black Duck SCA system](https://www.blackduck.com/software-composition-analysis-tools/black-duck-sca.html) via Black Duck's REST APIs. Unlike the Bazel detector, the BitBake detector only supports a single project type, so has no need for a pipeline approach.
 
 <a name="cpp"></a>
 ## C++ / Robot Software
 
-Since late 2021 I have been developing robot software in my spare time, primarily in C++. One of my objectives in this has been to learn C++. I think robots are a lot of fun so robotics provides an interesting sandbox for learning a new language. For a look at some of my recent C++ code:
+Since late 2021 I have been developing robot software in my spare time, primarily in C++. One of my objectives in this was to improve my C++ skills. I think robots are a lot of fun so robotics provided an interesting sandbox for learning a new language. For a look at some of my C++ code:
 
 1. git clone https://github.com/stevebillings/wanderbot.git
 1. cd wanderbot
